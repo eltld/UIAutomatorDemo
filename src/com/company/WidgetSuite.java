@@ -64,8 +64,7 @@ public class WidgetSuite extends UiAutomatorTestCase {
 	    
 	    Logger.printMessage("Move the widget");
 	    
-	    getUiDevice().drag(startX, startY, -50, -50, 0);
-
+	    //getUiDevice().drag(startX, startY, 0, 0, 0);
 		
 		assertTrue("Calendar widget hasn't moved", calendarWidget.getVisibleBounds().centerX()!= startX);
 		assertTrue("Calendar widget hasn't moved", calendarWidget.getVisibleBounds().centerY()!= startY);
